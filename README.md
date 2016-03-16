@@ -3,7 +3,7 @@
 
 ## To Use
 
-T```bash
+```bash
 # Clone this repository
 git clone https://github.com/thebaconspace/BaconSpaceApp
 # Go into the repository
