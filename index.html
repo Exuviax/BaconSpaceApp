@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BaconSpaceApp</title>
+</head>
+<body>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+  <script>
+    window.$ = window.jQuery = require('jquery');
+  </script>
+<style>
+body {background-color: lightgrey;}
+</style>
+
+<script>
+function setPCIPCP() {
+  $.ajax({
+    url: "https://beam.pro/api/v1/channels/bacon_space",
+    dataType: 'text',
+    success: function(data) {
+      if(data != undefined){
+        var json = $.parseJSON(data);
+        $('#BaconSpace').text(json.numFollowers);
+      } else {
+      }
+    },
+    error: function(data) {
+    }
+  });
+}
+setPCIPCP();
+setInterval(function () {
+  setPCIPCP()
+}, 1000);
+</script>
+<script>
+function setPCIPCP() {
+  $.ajax({
+    url: "https://api.hitbox.tv/user/bacon_space",
+    dataType: 'text',
+    success: function(data) {
+      if(data != undefined){
+        var json = $.parseJSON(data);
+        $('#bsh').text(json.followers);
+      } else {
+      }
+    },
+    error: function(data) {
+    }
+  });
+}
+setPCIPCP();
+setInterval(function () {
+  setPCIPCP()
+}, 1000);
+</script>
+
+
+<script>
+function setPCIPCP() {
+  $.ajax({
+    url: "https://beam.pro/api/v1/channels/bacon_space",
+    dataType: 'text',
+    success: function(data) {
+      if(data != undefined){
+        var json = $.parseJSON(data);
+        $('#BaconSpaces').text(json.numFollowers);
+      } else {
+      }
+    },
+    error: function(data) {
+    }
+  });
+}
+setPCIPCP();
+setInterval(function () {
+  setPCIPCP()
+}, 1000);
+</script>
+
+<script>
+function setPCIPCP() {
+  $.ajax({
+    url: "https://api.hitbox.tv/user/baconspace",
+    dataType: 'text',
+    success: function(data) {
+      if(data != undefined){
+        var json = $.parseJSON(data);
+        $('#hitbox').text(json.followers);
+      } else {
+      }
+    },
+    error: function(data) {
+    }
+  });
+}
+setPCIPCP();
+setInterval(function () {
+  setPCIPCP()
+}, 1000);
+</script>
+
+
+<script>
+function setPCIPCP() {
+  $.ajax({
+    url: "https://beam.pro/api/v1/channels/bacon_space",
+    dataType: 'text',
+    success: function(data) {
+      if(data != undefined){
+        var json = $.parseJSON(data);
+        $('#Bacon_Space').text(json.online);
+      } else {
+      }
+    },
+    error: function(data) {
+    }
+  });
+}
+setPCIPCP();
+setInterval(function () {
+  setPCIPCP()
+}, 1000);
+</script>
+<script>
+function setPCIPCP() {
+  $.ajax({
+    url: "https://beam.pro/api/v1/channels/bacon_space",
+    dataType: 'text',
+    success: function(data) {
+      if(data != undefined){
+        var json = $.parseJSON(data);
+        $('#Bacon_Space').text(json.online);
+      } else {
+      }
+    },
+    error: function(data) {
+    }
+  });
+}
+setPCIPCP();
+setInterval(function () {
+  setPCIPCP()
+}, 1000);
+</script>
+<script>
+function setPCIPCP() {
+  $.ajax({
+    url: "https://beam.pro/api/v1/channels/bacon_space",
+    dataType: 'text',
+    success: function(data) {
+      if(data != undefined){
+        var json = $.parseJSON(data);
+        $('#Title').text(json.name);
+      } else {
+      }
+    },
+    error: function(data) {
+    }
+  });
+}
+setPCIPCP();
+setInterval(function () {
+  setPCIPCP()
+}, 1000);
+</script>
+
+<center>
+<iframe src
+="
+https://beam.pro/embed/player/Bacon_Space"><p>Your browser does not support iframes.</p></iframe></center>
+<center>
+  <div class="panel panel-default">
+  <div class="panel-heading">Bacon_Space's Followers:</div>
+  <div class="panel-body">
+  <h2 style="color:Black"><span class="label label-primary"><span id="BaconSpace"><i class="fa fa-refresh fa-spin"></i></span></h2>
+  </div>
+</div>
+<center>
+  <div class="panel panel-default">
+  <div class="panel-heading">Bacon_Space's Title:</div>
+  <div class="panel-body">
+  <h2 style="color:Black"><span class="label label-primary"><span id="Title"><i class="fa fa-refresh fa-spin"></i></span></h2>
+  </div>
+</div>
+
+
+
+<center>
+  <div class="panel panel-default">
+  <div class="panel-heading">Bacon_Space's Live Status:</div>
+  <div class="panel-body">
+  <h2 style="color:Black"><span class="label label-primary"><span id="Bacon_Space"><i class="fa fa-refresh fa-spin"></i></span></h2>
+  </div>
+</div>
+<center>
+  <div class="panel panel-default">
+  <div class="panel-heading">Reload The Page</div>
+  <div class="panel-body">
+  <h2 style="color:Black"><button class="btn btn btn-primary"  VALUE="Reload Page" onClick="history.go(0)">
+Refresh</button></span></h2>
+  </div>
+</div>
+
+  </li>
+</ul>
+
+</center>
+</body>
+</html>
